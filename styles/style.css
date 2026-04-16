@@ -49,6 +49,7 @@
 .card__title {
   font-family: var(--font-main);
   font-weight: var(--font-weight-card-title);
+  font-variation-settings: 'wght' 785;
   font-size: var(--card-title-size);
   line-height: var(--card-title-line);
   color: var(--color-text);

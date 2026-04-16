@@ -2,10 +2,10 @@
   /* Шрифты */
   --font-main: "Inter", system-ui, -apple-system, sans-serif;
   --font-accent: "PressStart2P", cursive;
-
+    font-variation-settings: 'wght' 400;
   /* Веса шрифтов */
   --font-weight-card-text: 400;
-  --font-weight-card-title: 700;
+  --font-weight-card-title: 785;
   --label-stroke-color: #ffffff;
   --label-text-color: #000000;
   --label-font-size: 14px;
