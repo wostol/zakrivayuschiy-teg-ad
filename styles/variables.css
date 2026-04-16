@@ -1,1 +1,89 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Шрифты */
+  --font-main: "Inter", system-ui, -apple-system, sans-serif;
+  --font-accent: "PressStart2P", cursive;
+
+  /* Веса шрифтов */
+  --font-weight-card-text: 400;
+  --font-weight-card-title: 700;
+  --label-stroke-color: #ffffff;
+  --label-text-color: #000000;
+  --label-font-size: 14px;
+  --label-padding: 2px 6px;
+
+  /* Цвета */
+  --Themes-mainColor: #000000;
+  --color-accent: #ff4757;
+  --color-text: #1a1a1a;
+  --color-text-light: #ffffff;
+  --color-bg: #e7e7e7;
+  --color-stroke: #d3d3d3;
+  --color-border: #000000;
+
+  /* Сердце */
+  --contour-color: #1a1a1a;
+  --animation-fill-color: #ff4757;
+
+  /* Размеры контейнеров */
+  /* Контейнеры */
+  --container-width-mobile: 100%;
+  --container-width-desktop: clamp(320px, 90%, 1200px);
+  --cards-section-width-mobile: 100%;
+  --cards-section-width-desktop: clamp(320px, 85%, 1000px);
+
+  /* Отступы шапки (резиновые) */
+  --header-padding-vertical: clamp(60px, 10vw, 100px);
+  --header-padding-horizontal: clamp(20px, 5vw, 370px);
+  --header-inner-padding-vertical: clamp(120px, 12vw, 128px);
+  --header-inner-padding-horizontal: clamp(80px, 10vw, 120.5px);
+  /* Размеры карточки из Figma */
+  --card-desktop-width: 696px;
+  --card-desktop-height: 959px;
+  --card-mobile-width: 375px;
+  --card-image-size: 696px;
+  --card-content-height: 224px;
+  --card-title-height: 33px;
+
+  /* Отступы карточки */
+  --card-padding: 25px;
+  --card-gap: 25px;
+
+  /* Размеры кнопок */
+  --button-height: 38px;
+  --button-like-width: 130px;
+  --button-gap: 19px;
+
+  /* Шрифты карточки */
+  --card-text-size: 18px;
+  --card-text-line: 21px;
+  --card-title-size: 18px;
+  --card-title-line: 22px;
+  --button-text-size: 14px;
+  /* Размеры логотипа и заголовка (резиновые) */
+  --logo-font-size: clamp(1.5rem, 5vw, 3rem);
+  --header-title-size: clamp(0.75rem, 2.5vw, 1rem);
+  --button-text-color: #ffffff;
+  /* Отступы */
+  --spacing-xs: 1.25rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+
+  /* Анимации */
+  --transition-fast: 0.3s ease;
+  --transition-smooth: 0.5s ease-in-out;
+
+  /* Фон страницы */
+  --page-background:
+    repeating-linear-gradient(
+      to right,
+      var(--color-stroke) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--color-stroke) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #e7e7e7 20%, #1a1a1a 100%);
+}
