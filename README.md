@@ -1,1 +1,1 @@
-https://wostol.github.io/zakrivayuschiy-teg-ad
+https://github.com/wostol/zakrivayuschiy-teg-ad
