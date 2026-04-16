@@ -73,7 +73,6 @@
 
   /* Обводка текста */
   -webkit-text-stroke: 1px var(--label-stroke-color);
-  text-stroke: 1px var(--label-stroke-color);
 }
 
 /* Фоллбэк для браузеров без поддержки text-stroke */
