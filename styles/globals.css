@@ -1,110 +1,56 @@
+/* В этом файле уже написаны некоторые базовые стили, которые сбрасывают или преобразуют дефольное браузерное поведение.
+Здесь же лежит утилитарный класс visually-hidden на случай, если нужно скрыть какой-то элемент, но оставить доступным для скринридера.
+Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
 
-@import "variables.css";
-
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-html,
 body {
-  overflow-x: hidden;
+  margin: 0;
 }
 
-.page {
-  font-family: var(--font-main);
-  font-weight: var(--font-weight-card-text);
-  color: var(--color-text);
-  font-variation-settings: "wght" var(--font-weight-card-text);
-  background-image: var(--page-background);
-  background-size: cover;
-  background-attachment: fixed;
-  line-height: 1.5;
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
 }
 
-/* Шапка */
-.header {
-  padding-block: var(--header-padding-vertical);
-  text-align: center;
+a {
+  color: inherit;
 }
 
-.header__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-xs);
-  background: #fff;
-  padding-block: var(--header-inner-padding-vertical);
-  padding-inline: var(--header-inner-padding-horizontal);
-  inline-size: clamp(23.438rem, 17.634rem + 29.018vi, 43.75rem);
-  block-size: clamp(20.438rem, 19.705rem + 3.661vi, 23rem);
-  margin-inline: auto;
-  border: 2px solid var(--Themes-mainColor, #000000);
+button,
+input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
-/* На мобильных - на всю ширину */
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-accent);
-  font-size: clamp(3.063rem, 2.063rem + 3.2vi, 4.063rem);
-  color: var(--color-text);
-  line-height: 1;
-  font-weight: bold;
+ul,
+ol {
+  list-style: none;
 }
 
-.header__title {
-  font-family: var(--font-accent);
-  font-size: clamp(0.875rem, 0.313rem + 1.8vi, 1.438rem);
-  color: var(--color-text);
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.content {
-  padding-bottom: var(--spacing-lg);
-}
-
-.cards-section {
-  padding-block-end: 50px;
-}
-
-@media (width <=375px) {
-  .content {
-    margin-top: 100px;
-  }
-
-  .container--responsive {
-    width: var(--container-width-mobile);
-    padding-inline: 0;
-  }
-
-  .header {
-    position: relative;
-    padding-block: 0;
-    height: 327px;
-  }
-
-  .header__container {
-    margin-top: 100px;
-    height: 327px;
-    padding-inline: 14px;
-  }
-
-  .logo {
-    font-size: 49px;
-    line-height: 49px;
-  }
-
-  .header__title {
-    font-size: 14px;
-    line-height: 14px;
-    margin-top: 0;
-    letter-spacing: normal;
-  }
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
