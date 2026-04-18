@@ -28,7 +28,7 @@
 .card {
   position: relative;
   width: var(--card-desktop-width);
-  max-width: 100%; /* ❗ Важно: не даёт карточке вылезать за контейнер */
+  max-width: 100%;
   background: #ffffff;
   border: 2px solid var(--color-border);
   border-radius: 0;
@@ -125,7 +125,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  max-width: 100%; /* ❗ Важно: изображение не вылезает */
+  max-width: 100%;
 }
 
 @media (width <= 768px) {
@@ -212,7 +212,6 @@
   --button-text-color: #ffffff;
 }
 
-/* Эффект наведения */
 .button::before {
   content: "";
   position: absolute;

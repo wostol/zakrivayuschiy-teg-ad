@@ -45,7 +45,6 @@ body {
   border: 2px solid var(--Themes-mainColor, #000000);
 }
 
-/* На мобильных - на всю ширину */
 
 .logo {
   display: flex;
